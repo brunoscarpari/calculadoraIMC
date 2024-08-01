@@ -12,20 +12,20 @@ function imc(){
         let nivel= "";
 
         if(valor < 18.5){
-            nivel = 'Parabens alto nivel de gostosa';
+            nivel = 'abaixo do peso';
         }else if( valor < 25){
-            nivel = 'Parabens alto nivel de gostosa'
+            nivel = 'peso ideal'
         }else if(valor < 30){
-            nivel = 'Parabens alto nivel de gostosa'
+            nivel = 'leventemente acima do peso'
         }else if(valor < 35){   
-            nivel = 'Parabens alto nivel de gostosa'
+            nivel = 'Obesidade nivel I'
         }else if(valor < 40){
-            nivel = 'Parabens alto nivel de gostosa'
+            nivel = 'Obesidade nivel II'
         }else{
-            nivel = 'Parabens alto nivel de gostosa'
+            nivel = 'Obesidade nivel III'
         }
 
-        result.textContent = `${name} seu IMC é de ${valor} ${nivel}`;
+        result.textContent = `${name} seu IMC é de ${valor} e voce esta ${nivel}`;
     }else{
         result.textContent = 'preencha todas as informaçoes';
     }
